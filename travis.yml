@@ -1,0 +1,7 @@
+os: 
+    - osx
+language: cpp
+compiler: g++
+script:
+    - brew install terminalimageviewer.rb
+    - brew test terminalimageviewer
