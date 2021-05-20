@@ -1,9 +1,10 @@
 os: 
     - osx
-osx_image: xcode12u
+osx_image: xcode12.5
 language: cpp
 compiler: g++
 script:
     - export HOMEBREW_NO_AUTO_UPDATE=1
     - brew tap aaronliu0130/TerminalImageViewer https://github.com/aaronliu0130/TerminalImageViewer
     - brew install tiv
+    - tiv -0 -w 400 -h 400 https://upload.wikimedia.org/wikipedia/commons/2/24/Cornell_box.png
