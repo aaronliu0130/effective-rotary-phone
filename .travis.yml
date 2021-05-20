@@ -4,5 +4,6 @@ osx_image: xcode12u
 language: cpp
 compiler: g++
 script:
-    - brew tap aaronliu0130/TerminalImageViewer https://github.com/stefanhaustein/TerminalImageViewer
+    - export HOMEBREW_NO_AUTO_UPDATE=1
+    - brew tap aaronliu0130/TerminalImageViewer https://github.com/aaronliu0130/TerminalImageViewer
     - brew install tiv
