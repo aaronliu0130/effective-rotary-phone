@@ -4,5 +4,5 @@ osx_image: xcode12u
 language: cpp
 compiler: g++
 script:
-    - brew install terminalimageviewer.rb
-    - brew test terminalimageviewer
+    - brew tap aaronliu0130/TerminalImageViewer https://github.com/stefanhaustein/TerminalImageViewer
+    - brew install tiv
