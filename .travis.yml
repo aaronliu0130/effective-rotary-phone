@@ -5,7 +5,7 @@ language: cpp
 compiler: g++
 script:
     - export HOMEBREW_NO_AUTO_UPDATE=1
-    - brew tap aaronliu0130/effective-rotary-phone https://github.com/aaronliu0130/effective-rotary-phone
+    - brew tap aaronliu0130/TerminalImageViewer https://github.com/aaronliu0130/TerminalImageViewer
     - brew install --build-from-source tiv
     - brew test tiv
     - brew audit --strict tiv
