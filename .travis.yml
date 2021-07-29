@@ -4,8 +4,7 @@ osx_image: xcode12.5
 language: cpp
 compiler: g++
 script:
-    - export HOMEBREW_NO_AUTO_UPDATE=1
-    - brew tap aaronliu0130/TerminalImageViewer https://github.com/aaronliu0130/TerminalImageViewer
+    - export HOMEBREW_CORE_GIT_REMOTE="https://github.com/aaronliu0130/homebrew-core.git"
     - brew install --build-from-source tiv
     - brew test tiv
-    - brew audit --strict tiv
+    - brew audit --new-formula tiv
